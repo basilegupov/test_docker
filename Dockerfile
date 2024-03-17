@@ -1,5 +1,5 @@
 # Використовуємо базовий образ Python
-FROM python:3.10
+FROM python:3.11
 
 # Встановлюємо pipenv
 RUN pip install pipenv
@@ -12,4 +12,4 @@ WORKDIR /app
 RUN pipenv install
 
 # Вказуємо команду для запуску вашого додатку
-CMD ["pipenv", "run", "python", "app.py"]
+CMD ["pipenv", "run", "python", "mian.py"]
